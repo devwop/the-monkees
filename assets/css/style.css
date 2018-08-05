@@ -2,32 +2,26 @@
 
 /*--------------------------------------------------colors*/
 .psych-color-1 {
-    background-color: #50DCD1!important;
-    color: #50DCD1!important;
+    background-color: #50DCD1;
 }
 .psych-color-2 {
-    background-color: #73DA41!important;
-    color: #73DA41!important;
+    background-color: #73DA41;
 }
 .psych-color-3 {
-    background-color: #B23F5C!important;
-    color: #B23F5C!important;
+    background-color: #B23F5C;
 }
 .psych-color-4 {
-    background-color: #B06FA5!important;
-    color: #B06FA5!important;
+    background-color: #B06FA5;
 }
-.psych-color-5{
-    background-color: #E89B0D!important;
-    color: #E89B0D!important;
+.psych-color-5 {
+    background-color: #E89B0D;
 }
 .psych-color-6 {
-    background-color: #D94B73!important;
-    color: #D94B73!important;
+    background-color: #D94B73;
 }
 
 .bg-color-1 {
-    background-color: #536878!important;
+    background-color: #536878;
 }
 
 /*--------------------------------------------------text*/
@@ -44,41 +38,43 @@
     font-weight: 500;
 }
 
+
+.inline-block {
+    display: inline-block;
+}
+.center {
+    text-align: center;
+}
+
 /*--------------------------------------------------header*/
 .logo {
     background:url("https://fanart.tv/fanart/music/b8549efe-f4fd-4dc0-8ef1-226e9c400233/hdmusiclogo/monkees-the-5679955d30fe5.png");
     background-size:cover;
 }
 
-
-/* Add a background color to the top navigation */
 .menubar {
-    margin-left: 10px;
     overflow: hidden;
+    text-align: center;
 }
 
 /* Style the links inside the navigation bar */
 .menubar a {
-    margin-top: 40px;
     float: left;
-    display: block;
     color: white;
-    padding: 18px 15px;
-    text-align: center;
-    text-decoration: none;
     font-size: 22px;
+    display: block;
 }
 
 /* Change the color of links on hover */
-.menubar a:hover {
-    background-color: red;
+.menubar 
+a:hover {
+    background-color: #536878;
     color: white;
 }
 
 /* Add an active class to highlight the current page */
 .menubar-active {
-    background-color: red;
-    color: white;
+    background: rgba(0,0,0, 0.2);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -86,10 +82,39 @@
     display: none;
 }
 
-/*--------------------------------------------------Carousel*/
+/*--------------------------------------------------carousel*/
 .carousel-inner img {
     width: 100%;
     height: 100%;
+}
+
+/*--------------------------------------------------footer*/
+
+.footer {
+    display: block;
+}
+
+.social-links {
+    display: inline-block;
+}
+
+.social-links li a i{
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: white;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover{
+    background: red;   
 }
 
 /*--------------------------------------------------mediaQueries*/
@@ -190,6 +215,11 @@
         height: 100px;
         background-position: 0px -10px;
     }
+    .menubar a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 16.666%;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -197,6 +227,11 @@
     .logo {
         height: 100px;
         background-position: 5px -20px;
+    }
+    .menubar a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 16.666%;
     }
 }
 
@@ -207,7 +242,6 @@
 
 
 
-/*--------------------------------------------------Text*/
 /*--------------------------------------------------Text*/
 /*--------------------------------------------------Text*/
 /*--------------------------------------------------Text*/
