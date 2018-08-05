@@ -76,7 +76,7 @@
 }
 
 /* Add an active class to highlight the current page */
-.active {
+.menubar-active {
     background-color: red;
     color: white;
 }
@@ -84,6 +84,12 @@
 /* Hide the link that should open and close the topnav on small screens */
 .menubar .icon {
     display: none;
+}
+
+/*--------------------------------------------------Carousel*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
 }
 
 /*--------------------------------------------------mediaQueries*/
@@ -200,7 +206,7 @@
 
 
 
-/*--------------------------------------------------Text*/
+
 /*--------------------------------------------------Text*/
 /*--------------------------------------------------Text*/
 /*--------------------------------------------------Text*/

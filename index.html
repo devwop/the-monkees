@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    
+   
     <script>
         function myFunction() {
             var x = document.getElementById("themenubar");
@@ -24,6 +24,7 @@
                 x.className = "menubar";
             }
         }
+        
     </script>
     
 </head>
@@ -37,7 +38,7 @@
             <div class="menu col-md-8">
                 
                 <div class="menubar bg-color-1" id="themenubar">
-                    <a href="#home" class="active robotofive uppercase">Home</a>
+                    <a href="#home" class="menubar-active robotofive uppercase">Home</a>
                     <a href="#news" class="robotofive uppercase">News</a>
                     <a href="#stream" class="robotofive uppercase">Stream</a>
                     <a href="#tour" class="robotofive uppercase">Tour</a>
@@ -49,21 +50,61 @@
                 </div>      
             </div>
         </div>
-        <div class="row carousel">
+        <div class="row bg-color-1">
             <div class="col-xs-12">
-                <p>Page Content</p>
-                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" id="carousel-image-1">
+                             <img src="assets/images/carousel/monkees.jpg" alt="First slide">
+                        </div>
+                        <div class="item" id="carousel-image-2">
+                            <img src="assets/images/carousel/monkeescarousel.jpg" alt="Second slide">
+                        </div>
+                        <div class="item" id="carousel-image-3">
+                            <img src="assets/images/carousel/monkeeslarge.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                  
             </div>
         </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+   
+    
         <div class="row content">
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p>Page Content</p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         
         
         <div class="row footer bg-color-1">
-            <div class="col-md-4"></div>
+            <div class="col-md-4 leftfoot"></div>
             <div class="sociallinks col-md-4">
                 <h5 class="uppercase general-sub">Follow Us</h5>
                     <ul class="list-inline social-links">
@@ -75,7 +116,7 @@
                         <li><a target="_blank" href="https://soundcloud.com/themonkees"><i class="fa fa-soundcloud"></i></a></li>
                     </ul>
             </div>
-            <div class="col-sm-4"></div>
+            <div class="col-sm-4 rightfoot"></div> 
         </div>
         
         
@@ -83,4 +124,8 @@
     </div>
   
   </body>
+  
+     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
